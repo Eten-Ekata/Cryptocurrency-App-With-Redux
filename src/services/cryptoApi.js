@@ -25,7 +25,9 @@ const cryptoApiHeaders = {
       getCryptoHistory: builder.query({
         query: ({ coinId, timeperiod }) => createRequest(`coin/${coinId}/history?timeperiod=${timeperiod}`),
       }),
-
+      getCryptoHistory: builder.query({
+        query: ({ coinId, timeperiod }) => createRequest(`coin/${coinId}/history?timeperiod=${timeperiod}`),
+      }),
   })
   })
 
